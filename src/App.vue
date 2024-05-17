@@ -3,14 +3,14 @@ import MyHeader from './components/MyHeader.vue'
 import ProductsGrid from './components/ProductsGrid.vue'
 </script>
 <template>
-<header>
+ <div>
+  <header>
   <MyHeader></MyHeader>
 </header>
-<main>
-  <div class="w-full">
+<main class="w-full">
     <ProductsGrid></ProductsGrid>
-  </div>
 </main>
+ </div>
 </template>
 <style scoped>
 </style>
