@@ -9,7 +9,7 @@ const props = defineProps({
 })
 </script>
 <template>
-    <div class="product-container h-auto hover:shadow-xl hover:scale-95 duration-100 px-1">
+    <div class="product-container h-auto hover:shadow-xl hover:scale-95 duration-100 px-1 cursor-pointer">
         <div class="image-container object-cover  relative ">
             <div class="bg-orange-600 text-white absolute left-2 top-1 rounded-sm px-1 text-xs">{{ product.discount }}%</div>
             <img class="rounded-xl h-60" :src="product.image">

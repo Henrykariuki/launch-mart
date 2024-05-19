@@ -33,16 +33,16 @@ const filterbuttons = [
             <div class="section-one flex justify-between items-center w-auto h-auto">
                     <div class="logo font-bold text-lg mr-4">Launch Mart</div>
                     <div class="section-one-btns flex items-center">
-                        <button class="category bg-gray-100 border-solid border border-gray-500 flex justify-between px-4 py-2 rounded-l-lg text-gray-600">Category<ChevronDown /></button>
+                        <button class="category bg-gray-100 hover:bg-gray-200 border-solid border border-gray-500 flex justify-between px-4 py-2 rounded-l-lg text-gray-600">Category<ChevronDown /></button>
                         <input class="cursor-pointer py-2 pl-4 pr-14 bg-gray-100 border-gray-500 border-solid border-y" type="text" placeholder="What are you looking for...">
-                        <button class="search-btn px-4 py-2 bg-gray-100 border-solid border border-gray-500  rounded-r-lg"><Search class="text-gray-600" /></button>
+                        <button class="search-btn px-4 py-2 bg-gray-100 hover:bg-gray-200 border-solid border border-gray-500  rounded-r-lg"><Search class="text-gray-600" /></button>
                     </div>
             </div>
             <div class="section-two flex justify-between items-center w-auto h-auto">
-                    <div class="section-two-btns flex justify-between px-4 py-2 "><MapPin class="mr-2" />Nairobi, kenya</div>
-                    <div class="section-two-btns px-4 py-2">English - USD</div>
-                    <div class="section-two-btns flex justify-between px-2 py-2"><UserPlus class="mr-2"/>Sign up</div>
-                    <div class="section-two-btns flex justify-between px-6 py-2 bg-orange-600 rounded-lg text-white"><ShoppingCart class="mr-1" />Cart</div>
+                    <div class="section-two-btns flex justify-between px-4 py-2 hover:border border-black rounded-lg hover:text-orange-600 mr-1 cursor-pointer"><MapPin class="mr-2" />Nairobi, kenya</div>
+                    <div class="section-two-btns px-4 py-2 hover:border border-black rounded-lg hover:text-orange-600 mr-1 cursor-pointer">English - USD</div>
+                    <div class="section-two-btns flex justify-between px-2 py-2 rounded-lg mr-2 hover:border hover:text-orange-600 mr-1 border-black cursor-pointer"><UserPlus class="mr-2"/>Sign up</div>
+                    <div class="section-two-btns flex justify-between px-6 py-2 bg-orange-600 rounded-lg text-white cursor-pointer"><ShoppingCart class="mr-1" />Cart</div>
             </div>
         </div>
      </div>
@@ -55,7 +55,7 @@ const filterbuttons = [
                     </li>
                 </ul>
             </div>
-            <div class="contact border-solid border border-green-800 w-auto h-auto flex items-center text-gray-700"><Phone class="mr-1" size="16px" />+254707070707</div>
+            <div class="contact w-auto h-auto flex items-center text-gray-700"><Phone class="mr-1" size="16px" />+254707070707</div>
         </nav>
         </div>
         <div class=" w-full h-20" >
