@@ -76,7 +76,7 @@ const products = [
 
 </script>
 <template>
-<div class="w-full h-auto mt-4 grid grid-cols-5 gap-6 px-12 ">
+<div class="w-full h-auto mt-4 grid lg:grid-cols-5 lg:gap-6 px-12 ">
     <ProductCard v-for="(item, index) in products" :key="index"
     :product="item"/>
 </div>
