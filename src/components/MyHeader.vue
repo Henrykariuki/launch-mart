@@ -89,7 +89,7 @@ const menuOpen = ()=> {
                 <div class="wrapper-two w-auto flex items-center lg:px-12 h-auto overflow-auto">
                     <div v-for="(button, index) in filterbuttons" :key="filterbuttons.number" class="cursor-pointer border border-black hover:bg-gray-200 mr-2 rounded-xl flex items-center px-2 text-gray-500 relative">
                         <div v-if="button.hasButton" class=" red absolute bg-red-600 p-1.5 rounded-lg left-3"></div>
-                        <p class="ml-6 text-nowrap">{{ button.name }}</p><X size="16px" />
+                        <p class="ml-5 text-nowrap">{{ button.name }}</p><X size="16px" />
                 </div>
                     <div class="cursor-pointer px-2"><p class=" text-nowrap underline text-gray-500 hover:text-orange-600">Clear all</p></div>
                 </div>

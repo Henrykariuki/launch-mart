@@ -1,7 +1,7 @@
 <script setup>
 import MyHeader from './components/MyHeader.vue'
 import ProductsGrid from './components/ProductsGrid.vue'
-import Footer from './components/Footer.vue';
+import MyFooter from './components/MyFooter.vue';
 </script>
 <template>
  <div>
@@ -11,7 +11,9 @@ import Footer from './components/Footer.vue';
 <main class="w-full">
     <ProductsGrid></ProductsGrid>
 </main>
-<Footer></Footer>
+<footer>
+  <MyFooter></MyFooter>
+</footer>
  </div>
 </template>
 <style scoped>
