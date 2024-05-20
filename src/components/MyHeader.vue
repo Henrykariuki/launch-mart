@@ -62,7 +62,7 @@ const menuOpen = ()=> {
                         </li>
                     </ul>
                     <div @click="menuOpen" class="menu lg:hidden"><Menu size="40px"/></div>
-                    <div :class="[open ? '-left-96' : 'left-0']" class=" duration-500 flex flex-col items-center rounded w-60 h-auto bg-white z-50 absolute lg:hidden left-0 top-9">
+                    <div :class="[open ? 'left-0' : '-left-80']" class=" duration-500 flex flex-col items-center rounded w-60 h-auto bg-white z-50 absolute lg:hidden left-0 top-9">
                         <div v-for="(button, index) in tags" :key="index" class="px-2 py-1 w-28 my-2 flex justify-center rounded-md hover:bg-gray-200 hover:text-orange-600 items-center">{{ button.name }}</div>
                         
                     </div>
