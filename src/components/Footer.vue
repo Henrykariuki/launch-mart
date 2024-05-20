@@ -15,8 +15,8 @@ const info = [
 ]
 </script>
 <template>
-<div class="w-full h-auto flex justify-center px-20 bg-gray-200 flex ">
-    <div class="info-container  w-full h-52 bg-gray-200 flex justify-around items-end ">
+<div class="w-full h-auto lg:flex lg:justify-center lg:px-20 bg-gray-200 mt-4">
+    <div class="info-container  w-full h-auto bg-gray-200 lg:flex lg:justify-around items-end grid grid-cols-1">
         <div class="links w-auto h-44 text-gray-800 flex flex-col items-center ">
             <p class="font-bold mt-4">Contact</p>
             <div class="flex flex-col items-center mt-4">
@@ -31,7 +31,7 @@ const info = [
         </div>
         <div class="social-icons w-auto h-44  text-gray-800 flex flex-col items-center">
             <p class="font-bold mt-4">Get in touch</p>
-            <div class="flex justify-between items-center w-24 h-8 mt-10">
+            <div class="flex justify-between items-center w-24 h-8 mt-4 lg:mt-8">
                 <div class="w-auto h-auto hover:scale-95 duration-100 cursor-pointer"><Facebook /></div>
                 <div class="w-auto h-auto hover:scale-95 duration-100 cursor-pointer"><Instagram /></div>
                 <div class="w-auto h-auto hover:scale-95 duration-100 cursor-pointer"><Twitter /></div>
