@@ -15,8 +15,8 @@ const info = [
 ]
 </script>
 <template>
-<div class="w-full h-auto lg:flex lg:justify-center lg:px-20 bg-gray-200 mt-4">
-    <div class="info-container  w-full h-auto bg-gray-200 lg:flex lg:justify-around items-end grid grid-cols-1">
+<div class="w-full h-auto lg:flex lg:justify-center lg:px-20 bg-orange-200 mt-4">
+    <div class="info-container  w-full h-auto bg-orange-200 lg:flex lg:justify-around items-end grid grid-cols-1">
         <div class="links w-auto h-44 text-gray-800 flex flex-col items-center ">
             <p class="font-bold mt-4">Contact</p>
             <div class="flex flex-col items-center mt-4">

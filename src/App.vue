@@ -8,7 +8,7 @@ import Footer from './components/Footer.vue';
   <header>
   <MyHeader></MyHeader>
 </header>
-<main class="w-full border border-black">
+<main class="w-full">
     <ProductsGrid></ProductsGrid>
 </main>
 <Footer></Footer>

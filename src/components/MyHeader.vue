@@ -61,15 +61,15 @@ const menuOpen = ()=> {
                             <div class="flex items-center cursor-pointer">{{ tag.name }} <ChevronDown size="20px" v-if="tag.hasSubMenu"/></div>
                         </li>
                     </ul>
-                    <div @click="menuOpen" class="menu lg:hidden"><Menu /></div>
+                    <div @click="menuOpen" class="menu lg:hidden"><Menu size="40px"/></div>
                     <div :class="[open ? '-left-96' : 'left-0']" class=" duration-500 flex flex-col items-center rounded w-60 h-auto bg-white z-50 absolute lg:hidden left-0 top-9">
                         <div v-for="(button, index) in tags" :key="index" class="px-2 py-1 w-28 my-2 flex justify-center rounded-md hover:bg-gray-200 hover:text-orange-600 items-center">{{ button.name }}</div>
                         
                     </div>
                 </div>
                 <div class=" hidden lg:flex contact w-auto h-auto flex items-center text-gray-700"><Phone class="mr-1" size="16px" />+254707070707</div>
-                <input class=" lg:hidden cursor-pointer py-2 pl-4 pr-14 bg-gray-100 border-gray-500 border-solid border" type="text" placeholder="What are you looking for...">
-                <div class=" lg:hidden text-nowrap flex justify-between px-2 py-2 rounded-lg mr-2 hover:border hover:text-orange-600 mr-1 border-black cursor-pointer"><UserPlus class="mr-2"/>Sign up</div>
+                <input class=" lg:hidden md:hidden w-52 hover:outline mx-1 cursor-pointer py-2 pl-4 pr-14 bg-gray-100 border-gray-500 border-solid border" type="text" placeholder="What are you looking for...">
+                <div class=" lg:hidden text-nowrap flex justify-between px-1 py-2 rounded-lg mr-2 hover:border hover:text-orange-600 mr-1 border-black cursor-pointer"><UserPlus class="mr-2"/>Sign up</div>
             </nav>
         </div>
         <div class="w-full h-20 lg:px-12" >
@@ -89,7 +89,7 @@ const menuOpen = ()=> {
                 <div class="wrapper-two w-auto flex items-center lg:px-12 h-auto overflow-auto">
                     <div v-for="(button, index) in filterbuttons" :key="filterbuttons.number" class="cursor-pointer border border-black hover:bg-gray-200 mr-2 rounded-xl flex items-center px-2 text-gray-500 relative">
                         <div v-if="button.hasButton" class=" red absolute bg-red-600 p-1.5 rounded-lg left-3"></div>
-                        <p class="ml-3 text-nowrap">{{ button.name }}</p><X size="16px" />
+                        <p class="ml-6 text-nowrap">{{ button.name }}</p><X size="16px" />
                 </div>
                     <div class="cursor-pointer px-2"><p class=" text-nowrap underline text-gray-500 hover:text-orange-600">Clear all</p></div>
                 </div>
