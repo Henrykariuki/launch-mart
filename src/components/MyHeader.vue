@@ -35,7 +35,7 @@ const menuOpen = ()=> {
 }
 </script>
 <template>
-     <div class="full-divider border-b border-slate-300">
+     <div class="full-divider border-b border-slate-300 lg:px-12">
         <div class="w-full flex justify-between h-20">
             <div class="section-one flex justify-between items-center w-auto h-auto">
                     <div class="logo font-bold text-lg mr-4">Launch Mart</div>
@@ -56,18 +56,18 @@ const menuOpen = ()=> {
         <div class="full-divider full-divider border-b border-slate-300 lg:px-12">
             <nav class="nav-list w-full h-12  flex justify-between items-center">
                 <div class="relative">
-                    <ul class="hidden md:flex lg:flex w-auto h-auto flex" >
+                    <ul class="hidden md:flex lg:flex flex" >
                         <li class="px-2 py-1 rounded-md hover:border hover:border-solid hover:border-black hover:text-orange-600 duration-150 mr-2 text-gray-700" v-for="tag in tags">
                             <div class="flex items-center cursor-pointer">{{ tag.name }} <ChevronDown size="20px" v-if="tag.hasSubMenu"/></div>
                         </li>
                     </ul>
-                    <div @click="menuOpen" class="menu md:hidden lg:hidden"><Menu size="40px"/></div>
-                    <div :class="[open ? 'left-0' : '-left-80']" class="duration-500 flex flex-col items-center rounded w-60 h-auto bg-white z-50 absolute lg:hidden left-0 top-16">
+                    <div @click="menuOpen" class="menu md:hidden"><Menu size="40px"/></div>
+                    <div :class="[open ? 'left-0' : '-left-60']" class="duration-500 flex flex-col items-center rounded w-60 h-auto bg-white z-50 absolute lg:hidden left-0 top-16">
                         <div v-for="(button, index) in tags" :key="index" class="px-2 py-1 w-28 my-2 flex justify-center rounded-md hover:bg-gray-200 hover:text-orange-600 items-center">{{ button.name }}</div>
                         
                     </div>
                 </div>
-                <div class=" hidden lg:flex contact w-auto h-auto flex items-center text-gray-700"><Phone class="mr-1" size="16px" />+254707070707</div>
+                <div class=" hidden lg:flex contact flex items-center text-gray-700"><Phone class="mr-1" size="16px" />+254707070707</div>
                 <input class="rounded lg:hidden md:hidden w-52 hover:outline mx-1 cursor-pointer py-2 pl-4 pr-14 bg-gray-100 border-gray-500 border-solid border" type="text" placeholder="What are you looking for...">
                 <div class=" lg:hidden text-nowrap flex justify-between px-1 py-2 rounded-lg mr-2 hover:border hover:text-orange-600 mr-1 border-black cursor-pointer"><UserPlus class="mr-2"/>Sign up</div>
             </nav>

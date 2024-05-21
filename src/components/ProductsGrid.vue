@@ -1,6 +1,6 @@
 <script setup>
 import ProductCard from "./ProductCard.vue"
-
+import {ref} from 'vue'
 const products = [
     {
         image: '/images/image-01.jpg',

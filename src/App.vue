@@ -4,11 +4,11 @@ import ProductsGrid from './components/ProductsGrid.vue'
 import MyFooter from './components/MyFooter.vue';
 </script>
 <template>
- <div>
+ <div class="container mx-auto flex flex-col gap-8 h-screen ">
   <header>
-  <MyHeader></MyHeader>
+  <MyHeader class="mx-auto w-11/12 w-2xl"></MyHeader>
 </header>
-<main class="container mx-auto w-11/12">
+<main class="mx-auto w-11/12 flex-grow">
     <ProductsGrid></ProductsGrid>
 </main>
 <footer>
