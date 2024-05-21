@@ -8,7 +8,7 @@ import MyFooter from './components/MyFooter.vue';
   <header>
   <MyHeader></MyHeader>
 </header>
-<main class="w-full">
+<main class="container mx-auto w-11/12">
     <ProductsGrid></ProductsGrid>
 </main>
 <footer>
