@@ -36,7 +36,7 @@ const menuOpen = ()=> {
 </script>
 <template>
      <div class="full-divider border-b border-slate-300 lg:px-12">
-        <div class="w-full flex justify-between h-20">
+        <div class="w-full  flex justify-between h-14">
             <div class="section-one flex justify-between items-center w-auto h-auto">
                     <div class="logo font-bold text-lg mr-4">Launch Mart</div>
                     <div class="section-one-btns hidden md:flex lg:flex flex items-center">
@@ -54,7 +54,7 @@ const menuOpen = ()=> {
         </div>
      </div>
         <div class="full-divider full-divider border-b border-slate-300 lg:px-12">
-            <nav class="nav-list w-full h-12  flex justify-between items-center">
+            <nav class="nav-list  w-full h-12 flex justify-between items-center">
                 <div class="relative">
                     <ul class="hidden md:flex lg:flex flex" >
                         <li class="px-2 py-1 rounded-md hover:border hover:border-solid hover:border-black hover:text-orange-600 duration-150 mr-2 text-gray-700" v-for="tag in tags">
@@ -72,8 +72,8 @@ const menuOpen = ()=> {
                 <div class=" lg:hidden text-nowrap flex justify-between px-1 py-2 rounded-lg mr-2 hover:border hover:text-orange-600 mr-1 border-black cursor-pointer"><UserPlus class="mr-2"/>Sign up</div>
             </nav>
         </div>
-        <div class="w-full h-20 lg:px-12" >
-            <p class="text-3xl font-bold mt-6">Products</p>
+        <div class="w-full h-14 lg:px-12" >
+            <p class="text-3xl font-bold mt-2">Products</p>
         </div>
         <div class="filter lg:px-12 flex justify-between h-12 items-center">
             <div class="wrapper flex ml-1 w-full overflow-auto">
