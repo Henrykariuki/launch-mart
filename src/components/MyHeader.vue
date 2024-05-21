@@ -46,9 +46,9 @@ const menuOpen = ()=> {
                     </div>
             </div>
             <div class="section-two flex justify-between items-center w-auto h-auto">
-                    <div class=" hidden md:flex lg:flex  flex justify-between px-4 py-2 hover:border border-black rounded-lg hover:text-orange-600 mr-1 cursor-pointer"><MapPin class="mr-2" />Nairobi, kenya</div>
-                    <div class=" hidden md:flex  lg:flex  section-two-btns px-4 py-2 hover:border border-black rounded-lg hover:text-orange-600 mr-1 cursor-pointer">English - USD</div>
-                    <div class="hidden md:flex  lg:flex text-nowrap flex justify-between px-2 py-2 rounded-lg mr-2 hover:border hover:text-orange-600 mr-1 border-black cursor-pointer"><UserPlus class="mr-2"/>Sign up</div>
+                    <div class=" hidden md:hidden md:flex lg:flex  flex justify-between px-4 py-2 hover:border border-black rounded-lg hover:text-orange-600 mr-1 cursor-pointer"><MapPin class="mr-2" />Nairobi, kenya</div>
+                    <div class=" hidden md:hidden md:flex  lg:flex  section-two-btns px-4 py-2 hover:border border-black rounded-lg hover:text-orange-600 mr-1 cursor-pointer">English - USD</div>
+                    <div class="hidden md:hidden md:flex  lg:flex text-nowrap flex justify-between px-2 py-2 rounded-lg mr-2 hover:border hover:text-orange-600 mr-1 border-black cursor-pointer"><UserPlus class="mr-2"/>Sign up</div>
                     <div class="  flex justify-between px-6 py-2 bg-orange-600 rounded-lg text-white cursor-pointer"><ShoppingCart class="mr-1" />Cart</div>
             </div>
         </div>
@@ -61,8 +61,8 @@ const menuOpen = ()=> {
                             <div class="flex items-center cursor-pointer">{{ tag.name }} <ChevronDown size="20px" v-if="tag.hasSubMenu"/></div>
                         </li>
                     </ul>
-                    <div @click="menuOpen" class="menu md:hidden"><Menu size="40px"/></div>
-                    <div :class="[open ? 'left-0' : '-left-60']" class="duration-500 flex flex-col items-start rounded w-60 h-auto bg-white z-50 absolute lg:hidden left-0 top-16">
+                    <div  @click="menuOpen" class="menu md:hidden"><Menu size="40px"/></div>
+                    <div :class="[open ? 'left-0' : '-left-60']" class="duration-500 flex flex-col items-start rounded w-60 h-auto bg-white z-50 absolute md:hidden left-0 top-16">
                         <div v-for="(button, index) in tags" :key="index" class="px-2 py-1 w-28 my-2 w-full flex justify-start rounded-md hover:bg-gray-200 hover:text-orange-600 items-center">{{ button.name }}</div>
                         
                     </div>
