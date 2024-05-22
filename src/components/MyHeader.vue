@@ -35,7 +35,7 @@ const menuOpen = ()=> {
 }
 </script>
 <template>
-     <div class="full-divider border-b border-slate-300 lg:px-12">
+     <div class="full-divider border-b border-gray-800 lg:px-12">
         <div class="w-full  flex justify-between h-14">
             <div class="section-one flex justify-between items-center w-auto h-auto">
                     <div class="logo font-bold text-lg mr-4">Launch Mart</div>
@@ -53,8 +53,8 @@ const menuOpen = ()=> {
             </div>
         </div>
      </div>
-        <div class="full-divider full-divider border-b border-slate-300 lg:px-12">
-            <nav class="nav-list  w-full h-12 flex justify-between items-center">
+        <div class="full-divider full-divider border-b border-gray-800 lg:px-12">
+            <nav class="nav-list  w-full h-12 md:h-20 flex justify-between items-center">
                 <div class="relative">
                     <ul class="hidden md:flex lg:flex flex" >
                         <li class="px-2 py-1 rounded-md hover:border hover:border-solid hover:border-black hover:text-orange-600 duration-150 mr-2 text-gray-700" v-for="tag in tags">
@@ -62,7 +62,8 @@ const menuOpen = ()=> {
                         </li>
                     </ul>
                     <div  @click="menuOpen" class="menu md:hidden"><Menu size="40px"/></div>
-                    <div :class="[open ? 'left-0' : '-left-60']" class="duration-500 flex flex-col items-start rounded w-60 h-auto bg-white z-50 absolute md:hidden top-12">
+                    <div :class="[open ? 'left-0' : '-left-60']" class="duration-500 flex flex-col items-start rounded w-60 h-auto bg-white z-50 absolute md:hidden top-12
+                    ">
                         <div v-for="(button, index) in tags" :key="index" class="px-2 py-1 w-28 my-2 w-full flex justify-start rounded-md hover:bg-gray-200 hover:text-orange-600 items-center">{{ button.name }}</div>
                         
                     </div>
@@ -72,7 +73,7 @@ const menuOpen = ()=> {
                 <div class=" lg:hidden text-nowrap flex justify-between px-1 py-2 rounded-lg mr-2 hover:border hover:text-orange-600 mr-1 border-black cursor-pointer"><UserPlus class="mr-2"/>Sign up</div>
             </nav>
         </div>
-        <div class="w-full h-14 lg:px-12" >
+        <div class="w-full h-14 md:h-16 lg:px-12" >
             <p class="text-3xl font-bold mt-2">Products</p>
         </div>
         <div class="filter lg:px-12 flex justify-between h-12 items-center">
